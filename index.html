@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subha's protfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">
+                    <span>S</span>ubha.
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Software Developer | BCA Student</p>
+                <h1>Hi, I'm <span>Subha</span><br> Nandi from West Bengal, India</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------About--------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background2.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm a Bachelor of Computer Applications (BCA) student at Burdwan Institute of Management and
+                        Computer Science, expected to graduate in 2027. I'm an aspiring software developer with hands-on
+                        experience in Java, JavaScript, Node.js, Express.js, MongoDB, PHP and MySQL. I enjoy building
+                        full-stack web applications and working with REST APIs, databases and responsive interfaces.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java, JavaScript, C, PHP, SQL</li>
+                            <li><span>Frontend Development</span><br>HTML5, CSS3, React.js, Bootstrap</li>
+                            <li><span>Backend Development</span><br>Node.js, Express.js, REST APIs</li>
+                            <li><span>Databases</span><br>MongoDB, MySQL</li>
+                            <li><span>Core Concepts</span><br>Data Structures & Algorithms, OOP, DBMS</li>
+                            <li><span>Tools</span><br>Git, GitHub, VS Code, XAMPP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>AI/ML Intern</span><br>Worked with fundamental Artificial Intelligence and Machine
+                                Learning concepts.</li>
+                            <li><span>Practical Experience</span><br>Gained hands-on exposure through assignments and
+                                project-based learning.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Computer Applications (BCA)</span><br>Burdwan Institute of Management
+                                and Computer Science</li>
+                            <li><span>Expected Graduation</span><br>2027</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------services------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-titile">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Building responsive and user-friendly web interfaces using HTML5, CSS3, JavaScript, React.js, and
+                        Bootstrap.</p>
+
+                    <a href="https://subha-nandi.github.io/Rock-Paper-Scissors-Game/">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Backend Development</h2>
+                    <p>Developing server-side applications and REST APIs using Node.js, Express.js, and PHP.</p>
+
+                    <a href="https://bazarbox-ecommerce.vercel.app/">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>Database Management</h2>
+                    <p>Working with MongoDB and MySQL to store, retrieve, and manage application data.</p>
+
+                    <a href="https://bazarbox-ecommerce.vercel.app/">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------projects--------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titile">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/e-commerce.jpeg" alt="work1-Image">
+                    <div class="layer">
+                        <h3>Full-Stack E-commerce Website</h3>
+                        <p>
+                            Developed a full-stack e-commerce application using HTML, CSS, JavaScript,
+                            Node.js, Express.js, and MongoDB. Implemented REST APIs, cart and order
+                            management, backend-side price calculation, and frontend-backend integration
+                            using the Fetch API.
+                        </p>
+                        <a href="https://bazarbox-ecommerce.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/youtube.jpeg" alt="work2-Image">
+                    <div class="layer">
+                        <h3>Youtube Clone</h3>
+                        <p>
+                            Developed a responsive Youtube clone using HTML and CSS.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/game.jpeg" alt="work3-Image">
+                    <div class="layer">
+                        <h3>Rock Paper Scissors</h3>
+                        <p>
+                            Built an interactive game using HTML, CSS, and JavaScript, featuring
+                            JavaScript-based game logic, score tracking, and a responsive user interface.
+                        </p>
+                        <a href="https://subha-nandi.github.io/Rock-Paper-Scissors-Game/"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+
+    <!-- -----------------------Contact----------------------  -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titile">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>nandisubha176@gmail.com</p>
+                    <div class="social-icons">
+
+                        <a href="https://www.linkedin.com/in/subha-nandi"><i class="fab fa-linkedin"></i></a>
+
+                        <a href="https://github.com/Subha-Nandi" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/subha.nandi.733"><i class="fab fa-facebook"></i></a>
+
+                        <a href="https://www.instagram.com/subhaxz/"><i class="fab fa-instagram"></i></a>
+
+                    </div>
+                    <a href="SubhaNandi_resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" minlength="2" maxlength="100" required>
+
+                        <input type="email" name="email" placeholder="Your Email" maxlength="254" required>
+
+                        <textarea name="message" rows="6" placeholder="Your Message" minlength="10" maxlength="5000"
+                            required></textarea>
+
+                        <button type="submit" class="btn btn2" id="submit-btn">
+                            Submit
+                        </button>
+                    </form>
+
+                    <p id="msg" role="status" aria-live="polite"></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Designed & Built with <i class="fas fa-heart"></i> by Subha Nandi</p>
+        </div>
+
+    </div>
+    <script src="scripts/aboout.js"></script>
+    <script src="scripts//menu.js"></script>
+    <script src="scripts//contact.js"></script>
+</body>
+
+</body>
+
+</html>
